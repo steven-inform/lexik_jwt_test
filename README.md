@@ -7,6 +7,7 @@
 - Creëer een **databank**
 - Voeg een **.env** bestand toe met daarin de connectie naar de databank
 - Voer de **migrations** uit om de **user** table te creëren
+- Voer de **fixtures** uit om **één gebruiker** aan te maken zoals voorzien in de **UserFixture**
 - Voorzie in de map **config/jwt** de sleutelbestanden **private.pem** en **public.pem**
 
 ### Gebruik
