@@ -28,10 +28,10 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="array", nullable=true)
      */
-    private $roles;
-    
+    private $roles = array();
+
 
     public function getId(): ?int
     {
@@ -58,7 +58,7 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface
     public function getRoles(): array
     {
         $roles = $this->roles;
-        // guarantee every user at least has ROLE_USER **
+        // guarantee every user at least has ROLE_USER
         $roles[] = 'ROLE_USER';
 
         return array_unique($roles);
