@@ -3,12 +3,12 @@
 
 ### Installatie
 - Clone dit project
-- **composer install**
-- Creëer een **databank**
+- Creëer een nieuwe lege **databank**
 - Voeg een **.env** bestand toe met daarin de connectie naar de databank
+- **composer install**
 - Voer de **migrations** uit om de **user** table te creëren
 - Voer de **fixtures** uit om **één gebruiker** aan te maken zoals voorzien in de **UserFixture**
-- Voorzie in de map **config/jwt** de sleutelbestanden **private.pem** en **public.pem**
+- Voorzie in de map **config/jwt** de sleutelbestanden **private.pem** en **public.pem** (zie handleiding)
 
 ### Gebruik
 - de route **POST** -> **/api/login_check** geeft een JWT mits een geldige username en password verzonden worden (in JSON formaat)

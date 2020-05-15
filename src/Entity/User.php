@@ -28,10 +28,9 @@ class User implements \Symfony\Component\Security\Core\User\UserInterface
     private $password;
 
     /**
-     * @ORM\Column(type="array", nullable=true)
+     * @ORM\Column(type="json", nullable=true)
      */
     private $roles = array();
-
 
     public function getId(): ?int
     {
